@@ -1,0 +1,16 @@
+{
+  "name": "silentdrop-llm",
+  "version": "0.1.0",
+  "description": "Runtime guard against silent failures in LLM responses — missing required fields, enum drift, hallucinated IDs, claim/list mismatches. Zero dependencies.",
+  "type": "module",
+  "main": "index.mjs",
+  "exports": "./index.mjs",
+  "files": ["index.mjs", "examples", "README.md", "LICENSE"],
+  "scripts": { "test": "node --test", "demo": "node examples/synthetic.mjs" },
+  "keywords": ["llm","ai","openai","anthropic","agents","validation","schema","correctness","silent-failure","guardrail"],
+  "author": "Sravan Sridhar (https://github.com/sravan27)",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/sravan27/silentdrop-llm.git" },
+  "homepage": "https://github.com/sravan27/silentdrop-llm#readme",
+  "bugs": { "url": "https://github.com/sravan27/silentdrop-llm/issues" }
+}
