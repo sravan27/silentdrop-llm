@@ -47,4 +47,17 @@ $ node examples/synthetic.mjs
 
 This is the same "what silently goes wrong?" lens behind [silentdrop](https://github.com/sravan27/silentdrop) (silent data-loss bugs in JS database query layers — proven on PowerSync, Rocicorp's Zero, InstantDB, ElectricSQL, Dexie) — applied to the LLM-output boundary instead.
 
-If your agent/LLM layer is correctness-critical and you'd like the whole boundary hardened by hand — schema specs, guardrails, eval harness, regression tests — I take that on as a fixed 48-hour sprint, details at https://github.com/sravan27.
+## Need the deep version?
+
+`silentdrop-llm` catches the common silent failure modes automatically at the boundary. If your agent/LLM layer is correctness-critical and you want a **full manual hardening pass** — schema spec, guardrail wiring, eval harness, regression test suite, response-vs-reality reconciliation — I do it as a fixed sprint, no-find-no-charge:
+
+- **48-hour Implementation Sprint** ($1,000) — full hardening pass, code + tests + docs delivered.
+  **→ https://buy.polar.sh/polar_cl_z0eLsPUJeMwrcNs4MQPAQbKIM3Rbdb8fLDgVj2RZcmr**
+- **Diagnostic Fix** ($500) — one specific silent failure I diagnose, repro, and ship a PR for.
+  **→ https://buy.polar.sh/polar_cl_G0fuUHHZ1tg9E0oe7gluje9gs44l8FAqVnfwS2AJkbw**
+
+Background: I have shipped 8 silent-row-loss fixes to PowerSync sync-rules (4 merged + 4 open), 2 each at Rocicorp Zero and Autumn, plus PRs at InstantDB, ElectricSQL, Dexie, RxDB. Profile: https://github.com/sravan27.
+
+## License
+
+MIT
