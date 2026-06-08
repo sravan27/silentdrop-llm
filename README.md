@@ -2,6 +2,8 @@
 
 **Runtime guard against the silent failure modes of LLM responses.**
 
+→ **[silentdrop-sravan.vercel.app](https://silentdrop-sravan.vercel.app)** · for paid 48-hour sprint pricing and the audit track record.
+
 Most "the model gave a bad answer" bugs don't throw. The JSON parses, the keys look right, and the program proceeds. The failure surfaces three calls later — a wrong tool argument, a missing record, a 404 from a downstream service. By then the trail is cold.
 
 `silentdrop-llm` checks for those silent failures at the boundary, so you fail loudly *before* the bad value reaches anything stateful. MIT, zero dependencies, ~70 LOC.
